@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape DAVID A. JORGE TASE} \\ \vspace{1pt}
+    \small Buenos Aires, Argentina $|$ \href{mailto:djorge.ext@fi.uba.ar}{\underline{djorge.ext@fi.uba.ar}} $|$ 
+    \href{https://www.linkedin.com/in/djorgeext/}{\underline{linkedin.com/in/david}} $|$
+    \href{https://github.com/djorgeext}{\underline{github.com/djorgeext}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+ \small{Data Scientist and AI Engineer with a deep analytical foundation forged in Biomedical Engineering. I firmly believe that the most complex data ecosystems---from high-frequency physiological time series to massive corporate text repositories---require robust mathematical architectures to reveal their true value. Over the past few years, I have led the transition from manual analysis to automated artificial intelligence systems, specializing in the design, training, and deployment of hybrid neural networks (CNN-LSTM). My goal is to join a product-oriented team where I can translate advanced algorithmic research into scalable technological solutions, optimizing decision-making through empirical data.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Researcher \& Data Scientist}{April 2023 -- Present}
+      {Centro de Simulación Computacional (CSC), Universidad de Buenos Aires}{Buenos Aires, Argentina}
+      \resumeItemListStart
+        \resumeItem{Architected, optimized, and trained hybrid deep neural networks combining Convolutional (CNN) and Long Short-Term Memory (LSTM) architectures for the rigorous scrutiny of non-linear time series, specifically analyzing cardiac cycle variability.}
+        \resumeItem{Engineered and deployed automated Extract, Transform, Load (ETL) pipelines using Python and Bash, directly impacting laboratory operational efficiency by achieving a sustained 30\% reduction in preprocessing times for massive datasets and model training iterations.}
+        \resumeItem{Designed and implemented an advanced Generative AI structured document extraction workflow by building a Model Context Protocol (MCP) server, enabling Large Language Models (LLMs) to intelligently analyze and interact with PDF repositories.}
+        \resumeItem{Applied advanced Digital Signal Processing (DSP) algorithms coded in C and MATLAB, including Fast Fourier Transform (FFT), Discrete Wavelet Transforms (DWT), and Hilbert Transforms for high-precision feature engineering.}
+        \resumeItem{Prototyped embedded medical electronic systems utilizing STM32 microcontrollers, establishing USB CDC bidirectional communication layers for continuous real-time telemetry acquisition.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data \& Bioengineering Specialist}{November 2020 -- March 2023}
+      {Centro de Inmunología Molecular (CIM)}{Buenos Aires, Argentina}
+      \resumeItemListStart
+        \resumeItem{Led an intra-laboratory digital transformation initiative by developing automation scripts in Python to ingest raw instrumental data, analyze it, and generate high-fidelity technical reports, reducing manual human processing time from 4 hours to just 45 minutes per cycle.}
+        \resumeItem{Systematically standardized validation, calibration, and operational qualification protocols for highly complex bioanalytical instrumentation, guaranteeing absolute compliance with international ISO 13485 standards.}
+        \resumeItem{Engineered a process re-design that achieved a measurable 30\% reduction in operational equipment qualification cycle times.}
+        \resumeItem{Exerted technical leadership in infrastructure management, authoring technical specifications and conducting commercial viability analyses for the acquisition of over \$200,000 USD in specialized equipment.}
+        \resumeItem{Provided L2 technical support, predictive maintenance, and intensive training to stakeholders to ensure frictionless technological adoption by end-users.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad de Buenos Aires}{Buenos Aires, Argentina}
+      {Ph.D. Candidate in Electrical and Electronics Engineering}{2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Specialization:} Machine Learning \& Time Series Analysis applied to Electronic Design.}
+        \resumeItem{High-performance applied R\&D program focused on solving complex data analysis problems through AI. Primary thesis involves the design, architecture, and training of hybrid deep neural networks (CNN and LSTM).}
+        \resumeItem{Prioritizes the practical implementation of mathematical models by writing efficient production code, optimizing computational resources, and applying industry-standard technological tools.}
+        \resumeItem{\textbf{Publications:}
+          \begin{itemize}[label=\textendash, leftmargin=1.5em, itemsep=2pt, topsep=1pt]
+            \item \textbf{Jorge Tasé, D. A.}, Garavaglia, L., Defeo, M. M., \& Irurzun, I. M. (2025). \textit{Study of heart rate variability in healthy humans as a function of age: considerations on the contribution of the autonomic nervous system and the role of the sinoatrial node}. Front. Med. 12:1597299. doi: 10.3389/fmed.2025.1597299
+            \item Garavaglia, L., \textbf{Jorge Tasé, D. A.}, \& Irurzun, I. M. (2024). \textit{Heart Sound Sensor Based on a Piezoelectric Element and a Phantom Powered Preamplifier}. 2024 Argentine Conference on Electronics (CAE), Bahía Blanca, Argentina, pp. 1-4. doi: 10.1109/CAE59785.2024.10487125
+            \item \textit{Heart rate variability analysis in patients with pharmacoresistant focal temporal lobe epilepsy}. 15th European Epilepsy Congress; Rome, Italy; 2024; 449-449.
+          \end{itemize}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Universidad Tecnológica de La Habana ``José Antonio Echeverría''}{Havana, Cuba}
+      {Bachelor of Science in Biomedical Engineering}{Sep 2015 -- Jul 2020}
+      \resumeItemListStart
+        \resumeItem{\textbf{Capstone Project:} Designed an FPGA-based ultrasonic signal processing module using MATLAB/Simulink, achieving 92\% recall in event detection.}
+        \resumeItem{\textbf{Relevant Courses:} PCB Design \& Embedded C/C++; Digital Signal Processing; Biomedical Electronics.}
+        \resumeItem{\textbf{Technical Skills:} C/C++; STM32 microcontrollers; MATLAB; PCB layout; signal filtering; data acquisition.}
+        \resumeItem{\textbf{Career Relevance:} Leveraged rigorous engineering principles and low-level system design to support robust algorithmic implementations, data acquisition, and analytics solutions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Environments}{: Python, C/C++, SQL, JavaScript, Bash, Linux.} \\
+     \textbf{AI \& Machine Learning}{: PyTorch, TensorFlow, Scikit-Learn, Pandas, NLP, RAG, Predictive Modeling, Time Series Analysis (FFT, DWT).} \\
+     \textbf{Full-Stack \& Architecture}{: React, FastAPI, Node.js, RESTful API, Git, Docker, Model Context Protocol (MCP), LLM Integration.} \\
+     \textbf{Bioengineering \& Analytics}{: Digital Signal Processing (DSP), MATLAB, Telemetry Data Acquisition (USB CDC), ISO 13485, PCB Design, STM32, FPGA.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
